@@ -1,0 +1,131 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-weight: normal;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    margin: 0;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: rgb(82, 82, 82);
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    font-weight: bolder;
+}
+
+.nav-logo {
+    width: 24px;
+    height: 24px;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.main-content section {
+    width: 40%;
+}
+
+.about-me {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+@keyframes flash {
+    0% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.flashing-text {
+    animation: flash 1s infinite; 
+    font-weight: bold; 
+    color: #ff0000; 
+}
+
+
+.assignments {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.assignments ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.assignments ul li {
+    margin: 5px 0;
+}
+
+.assignments a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.assignments a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    color: #333333;
+    text-align: center;
+    padding: 10px 0;
+}
