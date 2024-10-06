@@ -1,0 +1,206 @@
+/* Basic reset for body */
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #f8f9fa; /* Light background */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 101; /* Ensure header stays above the TOC */
+    border-bottom: 1px solid #ddd; /* Optional border for a cleaner look */
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #2b6cb0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.toc {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-width: 250px;
+    font-size: 0.9em;
+    position: fixed;
+    top: 120px; /* Adjusted to be below the header */
+    left: 10px;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.toc h2 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc ul li {
+    margin-bottom: 0.5em;
+}
+
+.toc ul ul {
+    margin-left: 20px;
+}
+
+/* Style for sections */
+article {
+    margin-left: 270px; /* To account for the TOC on the left */
+    padding: 20px;
+    max-width: 1000px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #1a202c; /* Dark background */
+    color: #f8f9fa; /* Light text */
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 50px; /* Space between the footer and the content */
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .toc {
+        position: relative;
+        max-width: 100%;
+        margin-bottom: 20px;
+        left: 0;
+        top: 0;
+    }
+
+    article {
+        margin-left: 0;
+    }
+}
+
+
+/* Styling for the right-side specs box */
+.specs-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    position: fixed;
+    top: 120px; /* Aligned with the top of the page (adjust based on header height) */
+    right: 10px; /* Set to the right side of the screen */
+    z-index: 100;
+    font-size: 0.9em;
+    overflow-y: auto;
+    max-height: 80vh; /* Limits the height of the box */
+}
+
+.specs-box h2 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.specs-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.specs-box ul li {
+    margin-bottom: 10px;
+}
+
+.specs-box ul ul {
+    list-style-type: none;
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.specs-box ul ul li {
+    font-size: 0.85em;
+}
+
+/* Ensure proper page layout and that the main content leaves space for the box */
+article {
+    margin-right: 300px; /* Leave space for the specs box */
+    padding: 20px;
+    max-width: 1000px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .specs-box {
+        position: relative;
+        width: 100%;
+        top: 0;
+        right: 0;
+        margin-bottom: 20px;
+        max-height: none;
+    }
+
+    article {
+        margin-right: 0;
+    }
+}
+
+
+hr {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #333, #777, #333); /* Gradient color */
+    margin: 20px 0;
+}
+
+
+
+
