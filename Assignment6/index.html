@@ -8,58 +8,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>Accessible CSS Layout</header>
+    <header>
+        <h1>Accessible CSS Layout</h1>
+    </header>
     <nav>
         <ul>
-            <li><a href="#link1">Home</a></li>
-            <li><a href="#link2">About</a></li>
-            <li><a href="#link3">Projects</a></li>
-            <li><a href="#link4">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <aside class="aside-left">
         <h2>Aside 1</h2>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Mus viverra a maecenas et neque. Inceptos duis vitae libero; maecenas potenti arcu conubia. Enim ad ultricies senectus tristique tincidunt velit bibendum hac nibh. Odio luctus nisi gravida mattis condimentum torquent gravida. Nunc odio magnis tortor ad cras condimentum. Maecenas gravida metus ad dapibus natoque gravida ligula nisl praesent. Habitasse mauris aptent consectetur montes rhoncus penatibus.</p>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Mus viverra a maecenas et neque. Inceptos duis vitae libero; maecenas potenti arcu conubia. Enim ad ultricies senectus tristique tincidunt velit bibendum hac nibh. Odio luctus nisi gravida mattis condimentum torquent gravida. Nunc odio magnis tortor ad cras condimentum. Maecenas gravida metus ad dapibus natoque gravida ligula nisl praesent. Habitasse mauris aptent consectetur montes rhoncus penatibus..</p>
     </aside>
-    <main>
+    <main id="home">
         <h2>Some Words</h2>
         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Mus viverra a maecenas et neque. Inceptos duis vitae libero; maecenas potenti arcu conubia. Enim ad ultricies senectus tristique tincidunt velit bibendum hac nibh. Odio luctus nisi gravida mattis condimentum torquent gravida. Nunc odio magnis tortor ad cras condimentum. Maecenas gravida metus ad dapibus natoque gravida ligula nisl praesent. Habitasse mauris aptent consectetur montes rhoncus penatibus.</p>
         
-        <h2>Contact Us</h2>
-        <form action="#" method="post" aria-label="Contact form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" aria-label="Contact form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
 
-        <h2>Some Words</h2>
+            <h2>Some Words</h2>
         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Mus viverra a maecenas et neque. Inceptos duis vitae libero; maecenas potenti arcu conubia. Enim ad ultricies senectus tristique tincidunt velit bibendum hac nibh. Odio luctus nisi gravida mattis condimentum torquent gravida. Nunc odio magnis tortor ad cras condimentum. Maecenas gravida metus ad dapibus natoque gravida ligula nisl praesent. Habitasse mauris aptent consectetur montes rhoncus penatibus.</p>
         
-        <h2>Contact Us</h2>
-        <form action="#" method="post" aria-label="Contact form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" aria-label="Contact form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>
-    <aside class="aside-right">
+    <aside class="aside-right" id="about">
         <h2>Aside 2</h2>
         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Mus viverra a maecenas et neque. Inceptos duis vitae libero; maecenas potenti arcu conubia. Enim ad ultricies senectus tristique tincidunt velit bibendum hac nibh. Odio luctus nisi gravida mattis condimentum torquent gravida. Nunc odio magnis tortor ad cras condimentum. Maecenas gravida metus ad dapibus natoque gravida ligula nisl praesent. Habitasse mauris aptent consectetur montes rhoncus penatibus.</p>
     </aside>
-    <footer>Designed by Suhail for EVERYBODY</footer>
+    <footer id="projects">
+        <p>Designed by Suhail for EVERYBODY</p>
+    </footer>
 </body>
 </html>
