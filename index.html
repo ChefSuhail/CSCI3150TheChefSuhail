@@ -9,18 +9,13 @@
 <body>
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page1.html">Page 1</a></li>
-            <li><a href="page2.html">Page 2</a></li>
-            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="Assignment4/index.html">Lab #2</a></li>
+            <li><a href="Assignment5/index.html">Lab #3</a></li>
+            <li><a href="Assignment6/index.html">Lab #4</a></li>
         </ul>
     </nav>
+
     <div class="main-content">
-        <section class="about-me">
-            <h2>About Me</h2>
-            <p>Hello! My name's Suhail Alkaabi, I'm from the UAE aka Dubai. I am in my final semester as a CS major. This page will serve as my class portal for assignments and projects in this class.</p>
-            <p class="flashing-text">STAY TUNED FOR ALL THE UPCOMING UPDATES!!!</p>
-        </section>
         <section class="assignments">
             <h2>Assignments</h2>
             <ul>
@@ -29,16 +24,33 @@
                 <li><a href="Assignment6/index.html">Assignment 6</a></li>
             </ul>
         </section>
+
+        <!-- Skip to About Me button positioned below the assignments section -->
+        <button class="skip-link" onclick="scrollToAboutMe()">Skip to About Me</button>
     </div>
+
+    <div style="height: 800px;"></div>
+
+    <!-- About Me section without `id` -->
+    <section class="about-me-section">
+        <img src="img/SuhailAvatar.webp" alt="Avatar of Suhail Alkaabi" class="avatar">
+        
+        <p>Hello! My name is Suhail Awad Alkaabi, and I'm a senior computer science student from Abu Dhabi, UAE, currently studying at the University of Colorado Boulder. I have a strong passion for front-end development and a keen interest in creating user-friendly, accessible web applications. Over the years, I’ve had the chance to work on several projects, including collaborations with Expedia, where I honed my skills in HTML, CSS, JavaScript, and Angular.</p>
+        <p>In addition to coding, I enjoy exploring new technologies and expanding my knowledge in software design principles. I’m driven by a commitment to learning and growth, always seeking ways to apply my knowledge in meaningful and impactful projects. This page serves as a portal for my class assignments and projects, where I’ll be documenting my journey in this course. Thank you for visiting, and feel free to check back for updates as I progress through the semester!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024-Suhail Alkaabi</p>
+    </footer>
+
+    <!-- JavaScript to handle scrolling to the section -->
+    <script>
+        function scrollToAboutMe() {
+            const aboutMeSection = document.querySelector('.about-me-section');
+            if (aboutMeSection) {
+                aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
-<footer>
-    <p>&copy; 2024-Suhail Alkaabi</p>
-</footer>
 </html>
-
-
-
-
-    
-
-
