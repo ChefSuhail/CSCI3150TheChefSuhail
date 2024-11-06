@@ -42,14 +42,16 @@ footer {
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: #ffffff; /* White for better contrast */
     text-decoration: none;
     font-size: 16px;
 }
 
 .nav-links a:hover {
-    font-weight: bolder;
+    color: #ffcc00; /* A contrasting color for hover state */
+    font-weight: bold;
 }
+
 
 .nav-logo {
     width: 24px;
@@ -117,13 +119,15 @@ footer {
 }
 
 .assignments a {
+    color: #0044cc; /* Darker blue for higher contrast */
     text-decoration: none;
-    color: #007BFF;
 }
 
 .assignments a:hover {
     text-decoration: underline;
+    color: #002288; /* Even darker on hover for better contrast */
 }
+
 
 footer {
     color: #333333;
