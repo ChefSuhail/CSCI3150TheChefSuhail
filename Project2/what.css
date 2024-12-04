@@ -1,0 +1,123 @@
+/* What Page Styles */
+.hero {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+.content-section {
+    padding: 2rem 1rem;
+    background: #e6f7ff;
+    border-top: 4px solid #43cea2;
+    border-radius: 5px;
+}
+
+.content-section h2 {
+    color: #43cea2;
+}
+
+.content-section p {
+    color: #185a9d;
+}
+
+ol {
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: left;
+    padding-left: 1.5rem;
+    color: #333;
+}
+
+ol li {
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: left;
+    padding-left: 1.5rem;
+    color: #333;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* General Section Styles */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* Examples Section */
+.examples-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f4f4f4;
+    padding: 3rem;
+}
+
+.examples-container {
+    max-width: 900px;
+}
+
+.examples {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.example {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    flex: 1 1 calc(30% - 2rem); /* Responsive flexbox sizing */
+}
+
+.example h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.example p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Call to Action Section */
+.cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #6a11cb;
+    color: #fff;
+    padding: 3rem;
+}
+
+.cta-container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e55a5a;
+}
+

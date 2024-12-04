@@ -1,0 +1,63 @@
+/* Why Page Styles */
+.hero {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.content-section {
+    padding: 2rem 1rem;
+    background: #fff0e6;
+    border-top: 4px solid #feb47b;
+    border-radius: 5px;
+}
+
+.content-section h2 {
+    color: #ff7e5f;
+}
+
+.content-section p {
+    color: #8c564b;
+}
+
+
+/* Call to Action Section */
+.cta-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    min-height: 50vh;       /* Minimum height for proper centering */
+    background: #6a11cb;    /* Background color or gradient */
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.cta-container {
+    max-width: 800px;       /* Limit width for readability */
+}
+
+.cta-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e55a5a;
+}
+
