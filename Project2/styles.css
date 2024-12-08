@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background: #f9f9f9;
 }
 
 header {
@@ -29,6 +30,11 @@ header {
     font-weight: bold;
 }
 
+.nav-links a.active {
+    border-bottom: 2px solid #6a11cb;
+}
+
+/* Hero Section */
 .hero {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: #fff;
@@ -36,12 +42,22 @@ header {
     padding: 4rem 1rem;
 }
 
+/* Content Sections */
 .content-section {
     padding: 2rem 1rem;
     text-align: center;
 }
 
-/* Style for the active section when it's targeted */
+.content-section h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.content-section p {
+    color: #555;
+}
+
+/* Highlight the targeted section for improved focus */
 .content-section:target {
     background: #f4f4f4;
     border-left: 4px solid #2575fc;
@@ -49,7 +65,7 @@ header {
     transition: background 0.3s ease, border-left 0.3s ease;
 }
 
-
+/* Footer */
 footer {
     background: #222;
     color: #aaa;

@@ -9,47 +9,45 @@
 <body>
     <nav class="navbar" aria-label="Main Navigation">
         <ul class="nav-links">
-            <li><a href="Assignment4/index.html">Lab #2</a></li>
-            <li><a href="Assignment5/index.html">Lab #3</a></li>
-            <li><a href="Assignment6/index.html">Lab #4</a></li>
-            <li><a href="Project2/index.html">Project #2</a></li>
+            <li><a href="Assignment4/index.html">Lab #2: Coding Basics</a></li>
+            <li><a href="Assignment5/index.html">Lab #3: Tables and Forms</a></li>
+            <li><a href="Assignment6/index.html">Lab #4: Accessible CSS</a></li>
+            <li><a href="Project2/index.html">Final Project: Universal Design</a></li>
         </ul>
     </nav>
 
-    <div class="main-content">
+    <main class="main-content">
         <section class="assignments" aria-label="Assignments Section">
-            <h2>Assignments</h2>
+            <h2>Class Assignments</h2>
             <ul>
-                <li><a href="Assignment4/index.html">Assignment 4</a></li>
-                <li><a href="Assignment5/index.html">Assignment 5</a></li>
-                <li><a href="Assignment6/index.html">Assignment 6</a></li>
-                <li><a href="Project2/index.html">Project 2</a></li>
-
+                <li><a href="Assignment4/index.html">Lab #2: Coding Basics</a></li>
+                <li><a href="Assignment5/index.html">Lab #3: Tables and Forms</a></li>
+                <li><a href="Assignment6/index.html">Lab #4: Accessible CSS</a></li>
+                <li><a href="Project2/index.html">Final Project: Universal Design</a></li>
             </ul>
         </section>
 
-        <!-- Skip to About Me button positioned below the assignments section -->
         <button class="skip-link" onclick="scrollToAboutMe()">Skip to About Me</button>
-    </div>
+    </main>
 
-    <div style="height: 800px;"></div>
-
-    <!-- About Me section without `id` -->
-    <section class="about-me-section" aria-label="About Me Section">
-        <img src="img/SuhailAvatar.webp" alt="Avatar of Suhail Alkaabi" class="avatar">
-        
-        <p>Hello! My name is Suhail Awad Alkaabi, and I'm a senior computer science student from Abu Dhabi, UAE, currently studying at the University of Colorado Boulder. I have a strong passion for front-end development and a keen interest in creating user-friendly, accessible web applications. Over the years, I’ve had the chance to work on several projects, including collaborations with Expedia, where I honed my skills in HTML, CSS, JavaScript, and Angular.</p>
-        <p>In addition to coding, I enjoy exploring new technologies and expanding my knowledge in software design principles. I’m driven by a commitment to learning and growth, always seeking ways to apply my knowledge in meaningful and impactful projects. This page serves as a portal for my class assignments and projects, where I’ll be documenting my journey in this course. Thank you for visiting, and feel free to check back for updates as I progress through the semester!</p>
+    <section id="about-me-section" class="about-me" aria-label="About Me Section">
+        <div class="about-me-grid">
+            <img src="img/SuhailAvatar.webp" alt="Avatar of Suhail Alkaabi" class="avatar">
+            <div class="about-me-text">
+                <h2>About Me</h2>
+                <p>Hello! My name is Suhail Awad Alkaabi, and I'm a senior computer science student from Abu Dhabi, UAE, currently studying at the University of Colorado Boulder. I have a strong passion for front-end development and a keen interest in creating user-friendly, accessible web applications. Over the years, I’ve had the chance to work on several projects, including collaborations with Expedia, where I honed my skills in HTML, CSS, JavaScript, and Angular.</p>
+                <p>In addition to coding, I enjoy exploring new technologies and expanding my knowledge in software design principles. I’m driven by a commitment to learning and growth, always seeking ways to apply my knowledge in meaningful and impactful projects. This page serves as a portal for my class assignments and projects, where I’ll be documenting my journey in this course. Thank you for visiting, and feel free to check back for updates as I progress through the semester!</p>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024-Suhail Alkaabi</p>
+        <p>&copy; 2024 Suhail Alkaabi | <a href="https://github.com/ChefSuhail">GitHub</a> | <a href="https://linkedin.com/in/suhail-alkaabi-aaa16a1a6">LinkedIn</a></p>
     </footer>
 
-    <!-- JavaScript to handle scrolling to the section -->
     <script>
         function scrollToAboutMe() {
-            const aboutMeSection = document.querySelector('.about-me-section');
+            const aboutMeSection = document.querySelector('#about-me-section');
             if (aboutMeSection) {
                 aboutMeSection.scrollIntoView({ behavior: 'smooth' });
             }
@@ -57,3 +55,4 @@
     </script>
 </body>
 </html>
+ 
